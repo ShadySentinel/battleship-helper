@@ -1,6 +1,6 @@
 # 🚢 Battleship Helper
 
-An AI-powered battleship game assistant that helps you predict the most probable ship locations based on your hit/miss pattern. The app uses probability calculations to suggest the best next moves.
+An AI-powered battleship game assistant that helps you predict the most probable ship locations based on your hit/miss pattern. The app uses probability calculations to suggest the best next moves. PLEASE note that I specifically tailored this to work on the mobile app Plato.
 
 ## ✨ Features
 
