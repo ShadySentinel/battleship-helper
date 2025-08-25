@@ -2,6 +2,10 @@
 
 An AI-powered battleship game assistant that helps you predict the most probable ship locations based on your hit/miss pattern. The app uses probability calculations to suggest the best next moves. PLEASE note that I specifically tailored this to work on the mobile app Plato.
 
+![chooser28](https://github.com/user-attachments/assets/41cc9bca-24ad-46d2-9977-c5b7a56e2b8f)
+
+<img width="297" height="292" alt="image" src="https://github.com/user-attachments/assets/bd9d1106-880b-454f-b166-fbc96481ed01" />
+
 ## ✨ Features
 
 - **10×10 Game Board**: Standard battleship grid with coordinate system
@@ -10,12 +14,11 @@ An AI-powered battleship game assistant that helps you predict the most probable
 - **Interactive Interface**: Click to mark hits/misses, right-click for alternative actions
 - **Smart Suggestions**: Top 5 recommended next moves with probability percentages
 - **Real-time Updates**: Instant probability recalculation after each move
-- **Beautiful UI**: Modern, responsive design with glassmorphism effects
 
 ## 🏗️ Architecture
 
 - **Backend**: Python Flask API with probability calculation engine
-- **Frontend**: React.js with styled-components for modern UI
+- **Frontend**: React.js
 - **Algorithm**: Ship placement probability analysis based on hit/miss patterns
 
 ## 🚀 Quick Start
@@ -136,41 +139,6 @@ battleship-helper/
 4. **Update Frequently**: Recalculate after each shot for better predictions
 5. **Use the Suggestions**: The AI's top 5 recommendations are statistically optimal
 
-## 🚀 Deployment
-
-### Production Build
-
-1. Build the frontend:
-   ```bash
-   cd frontend
-   npm run build
-   ```
-
-2. Serve the backend with a production WSGI server:
-   ```bash
-   pip install gunicorn
-   gunicorn -w 4 -b 0.0.0.0:5000 app:app
-   ```
-
-### Docker (Optional)
-
-Create a `docker-compose.yml` file for easy deployment:
-
-```yaml
-version: '3.8'
-services:
-  backend:
-    build: ./backend
-    ports:
-      - "5000:5000"
-  
-  frontend:
-    build: ./frontend
-    ports:
-      - "3000:3000"
-    depends_on:
-      - backend
-```
 
 ## 🤝 Contributing
 
@@ -184,20 +152,4 @@ services:
 
 This project is open source and available under the MIT License.
 
-## 🆘 Troubleshooting
-
-### Common Issues
-
-- **Backend won't start**: Check if port 5000 is available
-- **Frontend won't connect**: Ensure backend is running on localhost:5000
-- **Dependencies issues**: Try deleting `node_modules` and reinstalling
-
-### Getting Help
-
-- Check the browser console for frontend errors
-- Check the terminal for backend errors
-- Ensure both servers are running simultaneously
-
----
-
-**Happy Battleship Hunting! 🎯🚢**
+**Happy ship hunting! 🎯🚢**
